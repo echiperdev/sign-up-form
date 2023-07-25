@@ -1,0 +1,8 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.custom-bg {
+    background: #c4eff7;
+    background-image: url('/assets/sean-oulashin-KMn4VEeEPR8-unsplash.jpg');
+    background-size: cover;
+}

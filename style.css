@@ -2,6 +2,6 @@
     box-sizing: border-box;
 }
 .custom-bg {
-    background-image: url('assets/sean-oulashin-KMn4VEeEPR8-unsplash.jpg');
+    background-image: url('./sean-oulashin-KMn4VEeEPR8-unsplash.jpg');
     background-size: cover;
 }

@@ -1,7 +1,7 @@
 // CONSTANTS */
 /* Store DOM elements */
 const form = document.querySelector('form');
-const password = document.querySelector('#password');
+const passwordElement = document.querySelector('#password');
 const passwordStrength = document.querySelector('#password-strength');
 const strongPassword = new RegExp('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})');
 const mediumPassword = new RegExp('((?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{6,}))|((?=.*[a-z])(?=.*[A-Z])(?=.*[^A-Za-z0-9])(?=.{8,}))');
@@ -47,7 +47,7 @@ form.addEventListener('submit', e => {
 password.addEventListener('input', () => {
     passwordStrength.style.display = 'block';
     clearTimeout(timeout);
-    timeout = setTimeout(() => passwordValidator.check(password.value), 500);
+    timeout = setTimeout(() => passwordValidator.check(passwordElement.value), 500);
     if (password.value.length !== 0) {
         passwordStrength.style.display != 'block';
     } else {
